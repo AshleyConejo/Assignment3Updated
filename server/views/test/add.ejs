@@ -1,0 +1,60 @@
+<%- include ../partials/header.ejs %>
+
+<%- include ../partials/main_nav.ejs %>
+
+<!-- Content for the Add page -->
+<div class="container">
+    <div class="row">
+        <div class="offset-md-3 col-md-6">
+            <h1><%= title %></h1>
+
+            <form class="form" method="post">
+                <div class="form-group">
+                    <label for="nameTextField">Class</label>
+                    <input type="text" class="form-control"
+                    id="nameTextField"
+                    placeholder="Enter the Class Title"
+                    name="Class" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="authorTextField">CRN</label>
+                    <input type="text" class="form-control"
+                    id="authorTextField"
+                    placeholder="Enter the CRN"
+                    name="CRN" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="publishedTextField">Date</label>
+                    <input type="text" class="form-control"
+                    id="publishedTextField"
+                    placeholder="Enter the Date"
+                    name="Date" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="priceTextField">Time</label>
+                    <input type="text" class="form-control"
+                    id="priceTextField"
+                    placeholder="Enter the Time"
+                    name="Time" required>
+                </div>
+
+                <button class="btn btn-primary" type="submit">
+                    <i class="fas fa-edit"></i> Submit</button>
+                
+                    <a href="/testlist" class="btn btn-warning">
+                        <i class="fas fa-undo"></i> Cancel</a>
+
+            </form>
+        </div>
+
+    </div>
+</div>
+
+
+
+<%- include ../partials/bottom_nav.ejs %>  
+
+<%- include ../partials/footer.ejs %>
